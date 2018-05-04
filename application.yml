@@ -11,7 +11,7 @@ spring:
         - bpmw
   datasource:
     url: ${DATASOURCE_URL}
-    username: proxy
+    username: proxy2
     password: ${DATASOURCE_PASSWORD}
     driver-class-name: oracle.jdbc.driver.OracleDriver
     test-on-borrow: true
@@ -19,7 +19,7 @@ spring:
 
 logging:
   level:
-    com.tsystems: INFO
+    com.tsystems: ERROR
     com.tsystems.bpmw.assurance.domain.delegates: DEBUG
     com.tsystems.bpmw.assurance.web: DEBUG
     com.tsystems.bpmw.ausnahme.domain.delegates: DEBUG
