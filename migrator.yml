@@ -1,0 +1,7 @@
+migrator:
+  data-timezone: ${DATA_TIMEZONE}
+
+camunda:
+  bpm:
+    job-execution:
+      enabled: false
