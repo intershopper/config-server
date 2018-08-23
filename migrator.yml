@@ -1,5 +1,8 @@
 migrator:
   data-timezone: ${DATA_TIMEZONE}
+  task-executor:
+    core-pool-size: 4
+    max-pool-size: 12
 
 camunda:
   bpm:

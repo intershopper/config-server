@@ -11,7 +11,7 @@ spring:
         - bpmw
   datasource:
     url: ${DATASOURCE_URL}
-    username: proxy2
+    username: proxy
     password: ${DATASOURCE_PASSWORD}
     driver-class-name: oracle.jdbc.driver.OracleDriver
     test-on-borrow: true
@@ -19,7 +19,7 @@ spring:
 
 logging:
   level:
-    com.tsystems: ERROR
+    com.tsystems: INFO
     com.tsystems.bpmw.assurance.domain.delegates: DEBUG
     com.tsystems.bpmw.assurance.web: DEBUG
     com.tsystems.bpmw.ausnahme.domain.delegates: DEBUG
@@ -48,3 +48,7 @@ camunda:
     database:
       schema-update: false
       table-prefix: CAMUNDA.
+
+security:
+  secret: isAl2SvRwTS5iFiMS0HundfgoAc1AZ3qPvu8JqZHD8bVVcBdqhWj3qO33GyXuYCrz2sjkDFWNnbIlSFhDTKek7SNWivCn0u0M6cNQCRD1Zg115gCbm725ihNylEIRZcfXHDNXPqMRh1k9tba3AUnhd2P3SJns8NG0XKCXLh9eDJkb81w57CN2REjwIPtjuwoQYFcEcDaxjpzVtysXjr6GKtUsFr7hMRmx8SLdfLiqpeMJ0t6wgiFZKnU3YIQeCKf
+  timeout: 60
