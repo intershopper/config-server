@@ -9,3 +9,12 @@ hystrix:
 ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
+
+zuul: 
+  host: 
+    connect-timeout-millis: 5000
+    max-per-route-connections: 20
+    max-total-connections: 200
+    socket-timeout-millis: 60000
+  semaphore: 
+    max-semaphores: 500
