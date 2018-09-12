@@ -19,12 +19,7 @@ spring:
 
 logging:
   level:
-    com.tsystems: INFO
-    com.tsystems.bpmw.assurance.domain.delegates: DEBUG
-    com.tsystems.bpmw.assurance.web: DEBUG
-    com.tsystems.bpmw.ausnahme.domain.delegates: DEBUG
-    com.tsystems.bpmw.email.domain.delegates: DEBUG
-    com.tsystems.bpmw.emailadapter.domain.delegates: DEBUG
+    com.tsystems: ERROR
   pattern:
     console: ${CONSOLE_LOG_PATTERN:%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:%5p}) [${spring.application.name},%X{X-GLOBAL-TRACE-ID},%X{X-PROCESS-NAME},%X{X-PROCESS-INSTANCE-ID},%X{X-BUSINESS-KEY},%X{X-METHOD-EXECUTION-TIME}] %clr(${PID:""}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}}
 
