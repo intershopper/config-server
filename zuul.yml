@@ -17,3 +17,5 @@ hystrix:
           strategy: THREAD
           thread:
             timeoutInMilliseconds: 20000
+        timeout:
+          enabled: false
