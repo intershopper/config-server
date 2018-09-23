@@ -19,3 +19,5 @@ hystrix:
             timeoutInMilliseconds: 20000
         timeout:
           enabled: false
+
+feign.hystrix.enabled=false
