@@ -8,6 +8,9 @@ zuul:
     max-per-route-connections: 20
     max-total-connections: 200
     socket-timeout-millis: 60000
+  ribbon:
+    eager-load:
+      enabled: true
 
 hystrix:
   command:
