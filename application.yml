@@ -16,6 +16,9 @@ spring:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     test-on-borrow: true
     validation-query: SELECT 1 FROM DUAL
+  banner:
+    location:
+      classpath: /usr/local/tomcat/webapps/banner.txt
 
 logging:
   level:
