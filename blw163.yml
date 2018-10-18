@@ -1,0 +1,5 @@
+blw163:
+  webservices:
+    oracleTaskServiceUrl=http://10.105.149.39:8888/integration/services/TaskService/TaskServicePort
+    oracleTaskQueryServiceUrl=http://10.105.149.39:8888/integration/services/TaskQueryService/TaskQueryService
+    bpmwFairExceptionSafeUrl=http://10.105.149.39:8888/bpmw-fair-1.100/ExceptionSafeSLSB 
