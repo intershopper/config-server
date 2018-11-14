@@ -4,8 +4,8 @@ ribbon:
 zuul:
   routes:
     ldap-adapter:
-      path: /api/ldap-adapter/**
-      url: http://10.105.149.39:8050
+      path: /ldap-adapter/**
+      url: http://10.105.149.39:8050/api
       stripPrefix: false
       sensitiveHeaders:
     blw163:
