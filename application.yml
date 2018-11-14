@@ -14,7 +14,8 @@ spring:
     password: ${DATASOURCE_PASSWORD}
     driver-class-name: oracle.jdbc.driver.OracleDriver
     test-on-borrow: true
-    validation-query: SELECT 1 FROM DUAL logging:
+    validation-query: SELECT 1 FROM DUAL 
+logging:
   level:
     com.tsystems: INFO
     com.tsystems.bpmw.assurance.domain.delegates: DEBUG
@@ -34,7 +35,8 @@ profiler:
         enabled: false
         interval: 1000
     ET:
-        enabled: false camunda:
+        enabled: false 
+camunda:
   bpm:
     history-level: full
     job-execution:
