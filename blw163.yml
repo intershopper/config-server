@@ -1,5 +1,20 @@
 blw163:
   webservices:
-    oracleTaskServiceUrl=http://10.105.149.39:8888/integration/services/TaskService/TaskServicePort
-    oracleTaskQueryServiceUrl=http://10.105.149.39:8888/integration/services/TaskQueryService/TaskQueryService
-    bpmwFairExceptionSafeUrl=http://10.105.149.39:8888/bpmw-fair-1.100/ExceptionSafeSLSB 
+    oracleTaskServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskService/TaskServicePort
+    oracleTaskQueryServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskQueryService/TaskQueryService
+    bpmwFairExceptionSafeUrl: http://${SOASUITEHOSTNAME}:8888/bpmw-fair-1.100/ExceptionSafeSLSB
+
+spring:
+  datasource:
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+camunda:
+  bpm:
+    admin-user:
+      id: admin
+      password: admin
+    database:
+      schema-update: true
+      table-prefix: ""
+      type: h2
