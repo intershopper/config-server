@@ -1,4 +1,16 @@
-zuul: 
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+zuul:
+  routes:
+    ldap-adapter:
+      path: /api/ldap-adapter/**
+      url: http://10.105.149.39:8050
+      stripPrefix: false
+      sensitiveHeaders:
+    blw163:
+      path: /api/blw163-service/**
+      serviceId: blw163-service
   host: 
     connect-timeout-millis: 5000
     max-per-route-connections: 20
@@ -21,17 +33,3 @@ hystrix:
 
 feign.hystrix.enabled: false hystrix:
             
-ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000 zuul:
-  routes:
-    ldap-adapter:
-      path: /api/ldap-adapter/**
-      url: http://10.105.149.39:8050
-      stripPrefix: false
-      sensitiveHeaders:
-    blw163:
-      path: /api/blw163-service/**
-      serviceId: blw163-service
-      
-    
