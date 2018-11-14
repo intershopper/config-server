@@ -9,7 +9,7 @@ zuul:
       stripPrefix: false
       sensitiveHeaders:
     blw163:
-      path: /api/blw163-service/**
+      path: /blw163-service/**
       serviceId: blw163-service
   host: 
     connect-timeout-millis: 5000
