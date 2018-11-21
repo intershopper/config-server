@@ -5,7 +5,7 @@ zuul:
   routes:
     ldap-adapter:
       path: /ldap-adapter/**
-      url: http://10.105.149.39:8050/api
+      url: http://bpm-w.telekom.de:8050/api
       stripPrefix: false
       sensitiveHeaders:
     blw163:
