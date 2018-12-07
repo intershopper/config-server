@@ -14,3 +14,8 @@ camunda:
     admin-user:
       id: admin
       password: admin
+    database:
+      schema-update: true
+      table-prefix: ""
+      type: h2
+
