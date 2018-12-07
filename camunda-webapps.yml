@@ -1,6 +1,6 @@
 spring:
   camunda-bpm-datasource:
-    url: ${DATASOURCE_URL}
+    jdbc-url: ${DATASOURCE_URL}
     username: sa
     password: sa
     driver-class-name: org.h2.Driver
