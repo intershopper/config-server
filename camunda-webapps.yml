@@ -1,16 +1,16 @@
 spring:
   camunda-bpm-datasource:
     url: ${DATASOURCE_URL}
-    username: camunda
-    password: ${CAMUNDA_BPM_DATASOURCE_PASSWORD}
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    test-on-borrow: true
-    validation-query: SELECT 1 FROM DUAL
+    username: sa
+    password: sa
+    driver-class-name: orh.h2.Driver
+  liquibase:
+    enabled: false
 
 camunda:
   bpm:
     authorization:
       enabled: true
     admin-user:
-      id: ${CAMUNDA_BPM_ADMIN_USERNAME}
-      password: ${CAMUNDA_BPM_ADMIN_PASSWORD}
+      id: admin
+      password: admin
