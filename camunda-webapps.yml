@@ -3,7 +3,7 @@ spring:
     url: ${DATASOURCE_URL}
     username: sa
     password: sa
-    driver-class-name: orh.h2.Driver
+    driver-class-name: org.h2.Driver
   liquibase:
     enabled: false
 
