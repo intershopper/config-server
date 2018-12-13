@@ -3,7 +3,8 @@ blw163:
     oracleTaskServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskService/TaskServicePort
     oracleTaskQueryServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskQueryService/TaskQueryService
     bpmwFairExceptionSafeUrl: http://${SOASUITEHOSTNAME}:8888/bpmw-fair-1.100/ExceptionSafeSLSB
-
+  externaltask:
+    timeout: 10
 spring:
   datasource:
     jdbc-url: jdbc:h2:file:/usr/local/tomcat/data/my-h2-database-file
